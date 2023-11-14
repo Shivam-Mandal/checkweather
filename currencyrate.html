@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="currencyrate.css">
+</head>
+
+<body>
+    <nav>
+        <h3>CurrencyConverter</h3>
+    </nav>
+    <div class="inputvalue">
+        <div class="sec1">
+            <label for="">Enter the amount:</label>
+            <input type="number" id="amount" placeholder="Enter amount" >
+            <label for="">Currency Rate:</label>
+            <div class="output">
+                <span id="output"></span>
+            </div>
+            <button class="submit">Submit</button>
+        </div>
+        <div class="sec2">
+            <label for="">Currency from</label>
+            <select name="" id="currencycodefrom">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="NZD">NZD</option>
+                <option value="ZAR">ZAR</option>
+                <option value="CNY">CNY</option>
+            </select>
+            <label for="">Currency to</label>
+            <select name="" id="currencycodeto">
+                <option value="INR">INR</option>
+                <option value="USD">USD</option>
+                <option value="AUD">AUD</option>
+                <option value="CAD">CAD</option>
+                <option value="NZD">NZD</option>
+                <option value="ZAR">ZAR</option>
+                <option value="CNY">CNY</option>
+            </select>
+        </div>
+
+        
+    </div>
+</body>
+<script src="currencyrate.js"></script>
+
+</html>
