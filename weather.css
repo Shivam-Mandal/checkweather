@@ -280,11 +280,11 @@ img{
         width: 100%;
     }
     .first{
-        font-size: 7px;
-    }
-    .last .date,.time{
         font-size: 10px;
     }
+/*     .last .date,.time{
+        font-size: 10px;
+    } */
     .first label{
         margin-bottom: 5px;
     }
