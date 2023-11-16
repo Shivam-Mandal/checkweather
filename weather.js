@@ -10,7 +10,7 @@ async function check(city) {
     let result = await fetch(`${url}`).then((response) => { return response.json() }).catch()
     console.log(result)
     
-    humidicon.src = 'photo/humidity.png'
+    humidicon.src = '/photo/humidity.png'
     tempicon1.src = '/webd/Javascript/project/photo/thermometer.png'
     tempicon2.src = '/webd/Javascript/project/photo/temperature.png'
     windicon.src = '/webd/Javascript/project/photo/wind.png'
