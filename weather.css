@@ -31,8 +31,8 @@ nav h2{
 }
 .weather-card{
     border: 1px solid black;
-    width: 450px;
-    height: 500px;
+    width:25%;
+    height: 40%;
     margin: auto;
     position: relative;
     border-radius: 10px;
