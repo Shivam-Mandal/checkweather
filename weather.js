@@ -11,9 +11,9 @@ async function check(city) {
     console.log(result)
     
     humidicon.src = '/photo/humidity.png'
-    tempicon1.src = '/webd/Javascript/project/photo/thermometer.png'
-    tempicon2.src = '/webd/Javascript/project/photo/temperature.png'
-    windicon.src = '/webd/Javascript/project/photo/wind.png'
+    tempicon1.src = '/photo/thermometer.png'
+    tempicon2.src = '/photo/temperature.png'
+    windicon.src = '/photo/wind.png'
     document.querySelector('#humid').innerHTML = ` ${result.main.humidity}%`
     document.querySelector('#location').innerHTML = `${result.name}`
     let tempvalue =result.main.temp
@@ -30,34 +30,34 @@ async function check(city) {
 
     switch (result.weather[0].main) {
         case 'Clouds':
-            weathericon.src = '/webd/Javascript/project/photo/cloudy.png'
+            weathericon.src = '/photo/cloudy.png'
             break;
         case 'Clear':
-            weathericon.src = '/webd/Javascript/project/photo/sun.png'
+            weathericon.src = '/photo/sun.png'
             break;
         case 'Rain':
-            weathericon.src = '/webd/Javascript/project/photo/weather.png'
+            weathericon.src = '/photo/weather.png'
             break;
         case 'Mist':
-            weathericon.src = '/webd/Javascript/project/photo/mist.png'
+            weathericon.src = '/photo/mist.png'
             break;
         case 'Snow':
-            weathericon.src = '/webd/Javascript/project/photo/winter-season.png'
+            weathericon.src = '/photo/winter-season.png'
             break;
         case 'Smoke':
-            weathericon.src = '/webd/Javascript/project/photo/smoke.png'
+            weathericon.src = '/photo/smoke.png'
             break;
 
         case 'Haze':
-            weathericon.src = '/webd/Javascript/project/photo/haze.png'
+            weathericon.src = '/photo/haze.png'
             break;
 
         case 'Fog':
-            weathericon.src = '/webd/Javascript/project/photo/fog.png'
+            weathericon.src = '/photo/fog.png'
             break;
 
         case 'Thunderstorm':
-            weathericon.src = '/webd/Javascript/project/photo/thunderstorm.png'
+            weathericon.src = '/photo/thunderstorm.png'
             break;
     }
 }
