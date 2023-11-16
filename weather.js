@@ -10,10 +10,10 @@ async function check(city) {
     let result = await fetch(`${url}`).then((response) => { return response.json() }).catch()
     console.log(result)
     
-    humidicon.src = '/photo/humidity.png'
-    tempicon1.src = '/photo/thermometer.png'
-    tempicon2.src = '/photo/temperature.png'
-    windicon.src = '/photo/wind.png'
+    humidicon.src = 'humidity.png'
+    tempicon1.src = 'thermometer.png'
+    tempicon2.src = 'temperature.png'
+    windicon.src = 'wind.png'
     document.querySelector('#humid').innerHTML = ` ${result.main.humidity}%`
     document.querySelector('#location').innerHTML = `${result.name}`
     let tempvalue =result.main.temp
@@ -30,34 +30,34 @@ async function check(city) {
 
     switch (result.weather[0].main) {
         case 'Clouds':
-            weathericon.src = '/photo/cloudy.png'
+            weathericon.src = 'cloudy.png'
             break;
         case 'Clear':
-            weathericon.src = '/photo/sun.png'
+            weathericon.src = 'sun.png'
             break;
         case 'Rain':
-            weathericon.src = '/photo/weather.png'
+            weathericon.src = 'weather.png'
             break;
         case 'Mist':
-            weathericon.src = '/photo/mist.png'
+            weathericon.src = 'mist.png'
             break;
         case 'Snow':
-            weathericon.src = '/photo/winter-season.png'
+            weathericon.src = 'winter-season.png'
             break;
         case 'Smoke':
-            weathericon.src = '/photo/smoke.png'
+            weathericon.src = 'smoke.png'
             break;
 
         case 'Haze':
-            weathericon.src = '/photo/haze.png'
+            weathericon.src = 'haze.png'
             break;
 
         case 'Fog':
-            weathericon.src = '/photo/fog.png'
+            weathericon.src = 'fog.png'
             break;
 
         case 'Thunderstorm':
-            weathericon.src = '/photo/thunderstorm.png'
+            weathericon.src = 'thunderstorm.png'
             break;
     }
 }
